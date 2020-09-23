@@ -196,7 +196,7 @@ class ViewController: UIViewController {
         
         self.progressLayer?.path = progressCirclePath.cgPath
         
-        let ratio = ((self.sliderAngle * 180 / CGFloat.pi) + 90) / 360
+        let ratio = (self.sliderAngle + 0.5 * CGFloat.pi) / (2 * CGFloat.pi)
         let newValue = Double(ratio * (self.interval[1] - self.interval[0]) + self.interval[0]).rounded(toPlaces: 1)
         self.valueLabel.text = "\(newValue)"
     }
