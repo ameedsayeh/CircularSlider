@@ -254,7 +254,6 @@ class ViewController: UIViewController {
     }
 }
 
-
 extension UIColor {
     
     convenience init(hexString: String, alpha: CGFloat = 1.0) {
